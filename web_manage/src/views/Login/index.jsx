@@ -10,7 +10,7 @@ export default function Login() {
   const checkLogin = () => {
     form.validateFields().then(res => {
       console.log(res)
-      navigate("/home")
+      navigate("/")
     }).catch(err => {
       console.log(err)
     })

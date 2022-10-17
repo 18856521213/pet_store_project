@@ -6,10 +6,12 @@ import LazyLoad from "./components/LazyLoad";
 export default function router() {
   return (
     <Routes>
-      <Route path="/" element={<Redirect to="/login" />}></Route>
-      <Route path="login" element={LazyLoad("Login")}></Route>
-      <Route path="home" element={<AuthConponent to={LazyLoad("Home")}></AuthConponent>}></Route>
-      <Route path="register" element={<AuthConponent to={LazyLoad("Register")}></AuthConponent>}></Route>
+      <Route path="login" element={LazyLoad("views", "Login")}></Route>
+      <Route path="/" element={<AuthConponent to={LazyLoad("views", "Home")}></AuthConponent>}>
+        <Route path="dataPanel" element={<AuthConponent to={LazyLoad("views", "DataPanel")}></AuthConponent>}></Route>
+        <Route path="/" element={<Redirect to="dataPanel" />}></Route>
+      </Route>
+      <Route path="register" element={LazyLoad("views", "Register")}></Route>
     </Routes>
   )
 }
