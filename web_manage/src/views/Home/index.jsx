@@ -30,7 +30,7 @@ export default function Home() {
       </Sider>
       <Layout>
         <Content>
-          <Outlet></Outlet>
+          <LayoutBox></LayoutBox>
         </Content>
       </Layout>
     </Layout>

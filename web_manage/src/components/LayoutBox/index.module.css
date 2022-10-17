@@ -1,0 +1,10 @@
+.box{
+  padding: 10px;
+}
+.box .content{
+  width: 100%;
+  height: calc(100vh - 20px);
+  overflow-y: auto;
+  background-color: #fff;
+  padding: 10px;
+}
