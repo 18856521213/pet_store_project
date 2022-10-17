@@ -10,6 +10,7 @@ export default function Login() {
   const checkLogin = () => {
     form.validateFields().then(res => {
       console.log(res)
+      sessionStorage.setItem("token", "11111")
       navigate("/")
     }).catch(err => {
       console.log(err)

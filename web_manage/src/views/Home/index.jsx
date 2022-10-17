@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import moduleStyle from "./index.module.css"
 import LayoutBox from "../../components/LayoutBox/"
 import { Layout, Menu } from 'antd';
