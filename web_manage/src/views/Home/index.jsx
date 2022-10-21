@@ -16,7 +16,6 @@ export default function Home() {
     }
   ]
   const menuClickHandle = ({ key, keyPath, domEvent }) => {
-    console.log(key, keyPath, domEvent)
     navigate("/" + key)
   }
   return (

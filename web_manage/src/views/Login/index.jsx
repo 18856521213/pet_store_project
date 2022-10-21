@@ -10,8 +10,10 @@ export default function Login() {
   const checkLogin = () => {
     form.validateFields().then(res => {
       console.log(res)
-      sessionStorage.setItem("token", "11111")
-      navigate("/")
+      sessionStorage.setItem("token", "11111");
+      setTimeout(() => {
+        navigate("/dataPanel")
+      }, 2000)
     }).catch(err => {
       console.log(err)
     })
