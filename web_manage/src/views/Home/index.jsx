@@ -8,6 +8,7 @@ export default function Home() {
   const navigate = useNavigate();
   const items = [
     { label: '数据看板', key: 'dataPanel' }, // 菜单项务必填写 key
+    { label: '会员管理', key: 'memberManage' }, // 菜单项务必填写 key
     { label: '菜单项二', key: 'item-2' },
     {
       label: '子菜单',

@@ -7,7 +7,6 @@ import Router from "./router/";
 
 
 function App() {
-  const a = "sss";
   return (
     <BrowserRouter>
       <Router></Router>

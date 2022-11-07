@@ -9,7 +9,8 @@ export default function router() {
       <Route path="login" element={LazyLoad("views", "Login")}></Route>
       <Route path="*" element={LazyLoad("views", "NotFoundPage")}></Route>
       <Route path="/" element={<AuthConponent to={LazyLoad("views", "Home")}></AuthConponent>}>
-        <Route path="dataPanel" element={<AuthConponent to={LazyLoad("views", "DataPanel")}></AuthConponent>}></Route>
+      <Route path="dataPanel" element={<AuthConponent to={LazyLoad("views", "DataPanel")}></AuthConponent>}></Route>
+      <Route path="memberManage" element={<AuthConponent to={LazyLoad("views", "MemberManage")}></AuthConponent>}></Route>
         {/* <Route path="/" element={<Redirect to="dataPanel" />}></Route> */}
       </Route>
       <Route path="register" element={LazyLoad("views", "Register")}></Route>
