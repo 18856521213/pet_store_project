@@ -9,7 +9,6 @@ export default function Login() {
   const navigate = useNavigate();
   const checkLogin = () => {
     form.validateFields().then(res => {
-      console.log(res)
       sessionStorage.setItem("token", "11111");
       setTimeout(() => {
         navigate("/dataPanel")
