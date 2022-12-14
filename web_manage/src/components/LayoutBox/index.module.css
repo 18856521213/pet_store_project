@@ -3,7 +3,7 @@
 }
 .box .content{
   width: 100%;
-  height: calc(100vh - 20px);
+  height: calc(100vh - 84px);
   overflow-y: auto;
   background-color: #fff;
   padding: 10px;

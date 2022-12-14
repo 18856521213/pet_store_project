@@ -1,6 +1,6 @@
 .box{
   display: flex;
-  height: calc(100vh - 40px);
+  height: calc(100vh - 110px);
   width: 100%;
   justify-content: space-between;
 }

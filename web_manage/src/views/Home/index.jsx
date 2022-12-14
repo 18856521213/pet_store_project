@@ -2,8 +2,10 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import moduleStyle from "./index.module.css"
 import LayoutBox from "../../components/LayoutBox/"
+import IconCom from './components/iconCom/';
+import HeaderTitle from './components/HeaderTitle/';
 import { Layout, Menu } from 'antd';
-const { Sider, Content } = Layout;
+const { Sider, Content, Header } = Layout;
 export default function Home() {
   const navigate = useNavigate();
   const items = [
@@ -23,12 +25,16 @@ export default function Home() {
     <>
      <Layout>
       <Sider className={moduleStyle.sider_box}>
+        <IconCom></IconCom>
         <Menu
         onClick={menuClickHandle} 
         mode="inline" 
         items={items} />
       </Sider>
       <Layout>
+        <Header style={{background: "#666af9", display: 'flex', alignItems: "center",justifyContent: 'flex-end'}}>
+          <HeaderTitle></HeaderTitle>
+        </Header>
         <Content>
           <LayoutBox></LayoutBox>
         </Content>
